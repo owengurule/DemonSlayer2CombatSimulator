@@ -1,0 +1,6 @@
+C:\Users\Technologist\Documents\GITHUB\DemonSlayer2CombatSimulator\DemonSlayer2CombatSimulator\bin\Debug\DemonSlayer2CombatSimulator.exe.config
+C:\Users\Technologist\Documents\GITHUB\DemonSlayer2CombatSimulator\DemonSlayer2CombatSimulator\bin\Debug\DemonSlayer2CombatSimulator.exe
+C:\Users\Technologist\Documents\GITHUB\DemonSlayer2CombatSimulator\DemonSlayer2CombatSimulator\bin\Debug\DemonSlayer2CombatSimulator.pdb
+C:\Users\Technologist\Documents\GITHUB\DemonSlayer2CombatSimulator\DemonSlayer2CombatSimulator\obj\Debug\DemonSlayer2CombatSimulator.csprojResolveAssemblyReference.cache
+C:\Users\Technologist\Documents\GITHUB\DemonSlayer2CombatSimulator\DemonSlayer2CombatSimulator\obj\Debug\DemonSlayer2CombatSimulator.exe
+C:\Users\Technologist\Documents\GITHUB\DemonSlayer2CombatSimulator\DemonSlayer2CombatSimulator\obj\Debug\DemonSlayer2CombatSimulator.pdb
