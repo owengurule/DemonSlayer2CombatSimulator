@@ -9,7 +9,7 @@ namespace DemonSlayer2CombatSimulator
     //enumerations
     enum AttackType
     {
-        Scythe,
+        Scythe = 1,
         Cross,
         HolyWater
 
@@ -18,35 +18,49 @@ namespace DemonSlayer2CombatSimulator
     {
 
         //properties
-        public int PlayerHealth { get; set; }
-        public bool IsAlive { set { this.IsAlive(PlayerHealth > 0); } }
+        public int HP { get; set; }
+        public bool IsAlive { set { this.IsAlive(HP > 0); } }
 
-
+                private Random rng = new Random();
 
         //constructors
-        public Player(int PlayerHealth)
+        public Player(int HP)
         {
-            this.PlayerHealth = 710;
+            this.HP = 710;
         }
 
 
         //methods
-        public int DoAttack()
+        public void Battle()
         {
-            int userNum;
-            Console.WriteLine("Enter 1 to perform a scytheSLash which has a 70% chance to do 100 damage." +
-            "\nEnter 2 for crossAttack which has a 100% chance of doing 60 damage, and healing you for 20 HP." +
-            "\nEnter 3 to use Holy Water which has a 30% chance to heal for 200 and a 70% chance to heal for 100");
-            userNum = Convert.ToInt32(Console.ReadLine());
+            //declare damage
+            int damage;
+            //switch statement to perform attack
+            switch(ChooseAttack())
+            {
+                case AttackType.Scythe:
+                    if (rng.Next(0, 101) > 30 )
+                   int damage = rng.Next(175, 201);
+                        enemy.HP -= damage;
+                    Console.WriteLine("{0} deals {1} damage to {2}", this.Name, damage, enemy.Name);
+            }
         }
+
+
+
 
         private AttackType ChooseAttack()
         {
 
-        }
-
-        public void TakeDamage(int damage)
-        {
+            Console.WriteLine(@"
+Choose Attack:
+1.Scythe, 70% chance to do 175 - 200 damage
+2.Cross, 100% chance of doing 60 damage and healing you for 20
+3.Holy Water, has a 30% chance to heal for 200 and a 70% chance to heal for 100");
+            //get input
+            int input = int.Parse(Console.ReadLine());
+            //return the selected attack type.
+                return (AttackType)input;
 
         }
 
