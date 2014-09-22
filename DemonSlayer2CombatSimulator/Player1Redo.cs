@@ -17,9 +17,10 @@ namespace DemonSlayer2CombatSimulator
     class Player
     {
 
+
         //properties
         public int HP { get; set; }
-        public bool IsAlive { set { this.IsAlive(HP > 0); } }
+        public bool IsAlive { get { return this.HP > 0; } }
 
                 private Random rng = new Random();
 
@@ -40,7 +41,7 @@ namespace DemonSlayer2CombatSimulator
             {
                 case AttackType.Scythe:
                     if (rng.Next(0, 101) > 30 )
-                   int damage = rng.Next(175, 201);
+                   damage = rng.Next(175, 201);
                         enemy.HP -= damage;
                     Console.WriteLine("{0} deals {1} damage to {2}", this.Name, damage, enemy.Name);
             }
