@@ -21,7 +21,7 @@ namespace DemonSlayer2CombatSimulator
             get { return _hp; }
             set { _hp = value; }
         }
-        public bool IsAlive { get {return this.(HP > 0); } }
+        public bool IsAlive { get {return this.HP > 0; } }
 
         //Constructor
         public Enemy(string name, int startingHP)

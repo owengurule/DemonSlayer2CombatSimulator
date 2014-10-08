@@ -11,6 +11,7 @@ namespace DemonSlayer2CombatSimulator
         static void Main(string[] args)
         {
             Player Owen = new Player( 710 );
+            Enemy Enemy = new Enemy( "dragon", 666 );
         }
     }
 }

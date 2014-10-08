@@ -19,6 +19,16 @@ namespace DemonSlayer2CombatSimulator
 
 
         //properties
+        private string _name;
+
+        public string Name
+        {
+            get { return _name; }
+            set { _name = value; }
+        }
+        
+
+
         public int HP { get; set; }
         public bool IsAlive { get { return this.HP > 0; } }
 
